@@ -1,4 +1,7 @@
 # rsyslog-dockerized
-Rsyslog Container 
+Rsyslog Container
 
-sudo docker build -t rsyslog-dockerized ~/ryslog-dockerized
+cd  ~/ryslog-dockerized
+
+sudo docker build -t rsyslog-dockerized .
+
