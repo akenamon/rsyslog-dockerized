@@ -8,4 +8,4 @@ RUN sed -i 's,#module(load="imtcp"),module(load="imtcp"),' /etc/rsyslog.conf
 RUN sed -i 's,#input(type="imtcp" port="514"),input(type="imtcp" port="514"),' etc/rsyslog.conf                                          
 VOLUME [/var/log]                                                                                                            
 EXPOSE 514                                                                                                                   
-ENTRYPOINT ["/usr/sbin/rsyslogd" "-nd"] 
+ENTRYPOINT ["/usr/sbin/rsyslogd", "-nd"] 
